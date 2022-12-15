@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FoodJP - comida oriental</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,600;1,700;1,800;1,900&family=Cairo:wght@400;700&family=Inter:wght@400;500&family=Montserrat:wght@500;600;700&family=Poppins:wght@400;600&family=Roboto:ital,wght@0,500;0,700;1,300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <p>Food</p>
+            <p>JP</p>
+        </div>
+        <div class="group">
+            <ul class="navigation">
+                <li><a href="#">Início</a></li>
+                <li><a href="#most-popular">Cardápio</a></li>
+                <li><a href="#location">Sobre</a></li>
+                <li><a href="#">Entrar</a></li>
+            </ul>
+            <img 
+                src="./image/menu-outline.svg" 
+                alt="icone do menu para celular"
+                class="menuToggle"
+                width='25rem'
+                onclick="handleToogle()"
+            >
+        </div>
+    </header>
+    <section class="banner" >
+        <div class="b-info">
+            <h1>Comida Oriental</h1>
+            <p>A culinária Japonesa é bastante equilibrada, sendo muito rica
+                em peixes (ômega 3), vegetais, massas e ingredientes frescos.
+            </p>
+            <a href="#">Cardápio</a>
+        </div>
+        <div class="b-img first">
+            <img src="./image/sushi-japanese.png" alt="sushis e um par de hashis">
+        </div>
+    </section>
+    <section class="banner" data-aos="fade-up">
+        <div class="b-info">
+            <h1>Feita de forma Tradicional</h1>
+            <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            </p>
+            <a href="#">Ler mais sobre o modo de preparo</a>
+        </div>
+        <div class="b-img">
+            <img src="./image/tiras-fritas.png" alt="sushis e um par de hashis">
+        </div>
+    </section>
+    <section id="most-popular" class="most-popular">
+        <div>
+            <h1>Mais populares</h1>
+        </div>
+        <div class="items-container">
+            <article data-aos="fade-up">
+                <img 
+                    src="./image/img-1.png" 
+                    alt="prato com macarrão e ovo cozido"
+                >
+                <h3>Lamen Apimentado</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <h1>R$ 30</h1>
+            </article>
+            <article data-aos="fade-down">
+                <img 
+                    src="./image/img-2.png" 
+                    alt="prato com macarrão grãos e ovo cozido"
+                >
+                <h3>Lamen Tradicional</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <h1>R$ 35</h1>
+            </article>
+            <article data-aos="fade-up">
+                <img 
+                    src="./image/img-3.png" 
+                    alt="prato com macarrão e peito de frango"
+                >
+                <h3>Lamen Apimentado</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <h1>R$ 29</h1>
+            </article>
+        </div>
+    </section>
+    <section class="reviewers">
+        <div>
+            <h1>Comentários</h1>
+        </div>
+        <div class="review-container" data-aos="slide-up">
+            <article class="review">
+                <img 
+                    src="./image/profile1.png" 
+                    alt="pessoa branca de cabelos pretos"
+                    class="r-img"
+                >
+                <h3>Daniele Almeida</h3>
+                <p>Ótimo serviço! Encantada com a qualidade dos pratos.</p>
+                <div class="stars">
+
+                    <img src="./image/star.svg" alt="estrela de avaliação">
+                    <img src="./image/star.svg" alt="estrela de avaliação">
+                    <img src="./image/star.svg" alt="estrela de avaliação">
+                    <img src="./image/star.svg" alt="estrela de avaliação">
+                    <img src="./image/star.svg" alt="estrela de avaliação">
+                </div>
+            </article>
+            <article class="review">
+                <img 
+                    src="./image/profile2.png" 
+                    alt="pessoa branca de cabelos pretos"
+                    class="r-img"
+                >
+                <h3>Ricardo França</h3>
+                <p>
+                    Não é apenas a comida excelente, 
+                    o serviço torna a experiência especial.
+                </p>
+                <div class="stars">
+
+                    <img src="./image/star.svg" alt="estrela de avaliação">
+                    <img src="./image/star.svg" alt="estrela de avaliação">
+                    <img src="./image/star.svg" alt="estrela de avaliação">
+                    <img src="./image/star.svg" alt="estrela de avaliação">
+                    <img src="./image/star.svg" alt="estrela de avaliação">
+                </div>
+            </article>
+        </div>
+    </section>
+    <section 
+    id="location"
+    class="location-container">
+        <div>
+            <h1>Localização</h1>
+        </div>
+        <img src="./image/map.png" alt="mapa para a entrega">
+        <div class="f-input">
+            <div>
+                <img src="./image/pin.svg" alt="icone de Localização">
+                <div class="input">
+                    <input 
+                        type="text" 
+                        placeholder="Localização para entrega"
+                        alt="campo para digitar seu endereço para a entrega"
+                    >
+                </div>
+            </div>
+            <div class="search">
+                <img src="./image/search-outline.svg" alt="">
+                <a href="#">Buscar</a>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="logo">
+            <p>Food</p>
+            <p>JP</p>
+        </div>
+        <div class="footer-container">
+            <div class="item">
+                <h3>Contato</h3>
+                <a href="tel:+5541991119201">+55 41 991119201</a>
+                <a href="mailto:wpsantos@tutanota.com">wpsantos@tutanota.com</a>
+            </div>
+            <div class="item">
+                <h3>Serviços</h3>
+                <a href="#">Entrega</a>
+                <a href="#">Retirada</a>
+            </div>
+            <div class="item">
+                <h3>Sobre nós</h3>
+                <a href="#">Menu</a>
+                <a href="#">Valores</a>
+                <a href="#">Página principal</a>
+            </div>
+        </div>
+    </footer>
+</body>
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init({
+        daration: 1000,
+    });
+  </script>
+<script src="./script.js"></script>
+</html>
